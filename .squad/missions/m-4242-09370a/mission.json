@@ -1,0 +1,53 @@
+{
+  "missionId": "m-4242-09370a",
+  "repo": "charleswool/ratify",
+  "cve": {
+    "cveId": "CVE-2025-22870",
+    "module": "golang.org/x/net",
+    "fixedVersion": "v0.56.0",
+    "severity": "high"
+  },
+  "affected": true,
+  "remediated": true,
+  "changedFiles": [
+    "go.mod"
+  ],
+  "transcript": [
+    {
+      "role": "security-reviewer",
+      "title": "Security Reviewer",
+      "summary": "Confirmed: golang.org/x/net (v0.55.0) is an affected dependency.",
+      "findings": {
+        "affected": true,
+        "module": "golang.org/x/net",
+        "oldVersion": "v0.55.0",
+        "fixedVersion": "v0.56.0"
+      }
+    },
+    {
+      "role": "remediator",
+      "title": "Remediator",
+      "summary": "Bumped golang.org/x/net: v0.55.0 -> v0.56.0 in go.mod.",
+      "findings": {
+        "remediated": true,
+        "changedFiles": [
+          "go.mod"
+        ]
+      }
+    },
+    {
+      "role": "scribe",
+      "title": "Scribe",
+      "summary": "Decision logged; PR body drafted.",
+      "findings": {}
+    }
+  ],
+  "budget": {
+    "tokensIn": 682,
+    "tokensOut": 929,
+    "totalTokens": 1611,
+    "estimatedCostUsd": 0.011,
+    "note": "estimatedCostUsd is illustrative, not a billed amount"
+  },
+  "stateDir": ".squad\\missions\\m-4242-09370a"
+}
